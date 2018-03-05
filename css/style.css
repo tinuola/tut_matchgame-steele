@@ -34,7 +34,6 @@ button {
 	outline: none;
 	cursor: pointer;
 	position: relative;
-	/* margin-right: 10px;*/
 	margin-bottom: 10px;
 }
 button:hover {
@@ -56,4 +55,10 @@ button:active {
   font-size: 7rem;
 	font-weight: 900;
 	color: rgb(255, 255, 255);
+}
+
+@media (max-width: 991px) {
+	button {
+		margin-bottom: 45px;
+	}
 }
