@@ -9,7 +9,22 @@ $(document).ready(function() {
   var $game = $('#game');
   var values = MatchGame.generateCardValues();
   MatchGame.renderCards(values, $game);
+
+  var restart = document.getElementById("restart");
+  $('#restart').click(function() {
+    MatchGame.restart();
+  });
 });
+
+/*
+  Restarts game.
+ */
+
+MatchGame.restart = function(){
+  var $game = $('#game');
+  var values = MatchGame.generateCardValues();
+  MatchGame.renderCards(values, $game);
+};
 
 /*
   Generates and returns an array of matching card values.
